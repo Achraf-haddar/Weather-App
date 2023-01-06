@@ -6,7 +6,7 @@ import { useEffect, useState } from 'react';
 export default function DataComponent({ countryName }) {    
     const [data, setData] = useState();
     const fetchData = async() => {
-        const results = await fetch("http://localhost:9000/", {
+        const results = await fetch("http://172.17.0.1:9000/", {
             method: 'POST',
             body: JSON.stringify({
                 country_name: countryName,
