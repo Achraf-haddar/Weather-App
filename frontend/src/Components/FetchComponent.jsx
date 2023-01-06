@@ -40,7 +40,7 @@ export default function FetchComponent({ onChangeName }) {
             <Grid spacing={0.5} container direction="row" alignItems="center" justifyContent="center">
                 <TextField
                     variant="outlined"
-                    label="URL"
+                    label="Country Name"
                     sx={{ width: '60ch' }}
                     style={{ marginBottom: "1em", marginTop: "2em", marginRight: "1em" }}
                     onChange={handleChange}
