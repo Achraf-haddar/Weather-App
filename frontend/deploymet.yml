@@ -8,7 +8,7 @@ spec:
     - protocol: TCP
       targetPort: 3000
       port: 80
-      nodePort: 30000
+      nodePort: 80 # port of the cluster
   selector:
     app: frontend
 ---
@@ -19,7 +19,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: frontend
